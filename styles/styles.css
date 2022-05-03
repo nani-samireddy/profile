@@ -482,6 +482,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.ml-44 {
+  margin-left: 11rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -522,10 +538,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 24rem;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
 .w-screen {
   width: 100vw;
 }
@@ -544,10 +556,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-5\/6 {
   width: 83.333333%;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
 }
 
 .w-3\/4 {
@@ -667,6 +675,42 @@ Ensure the default browser behavior of the `hidden` attribute.
           background-clip: text;
 }
 
+.p-14 {
+  padding: 3.5rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pt-28 {
   padding-top: 7rem;
 }
@@ -677,6 +721,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pl-44 {
+  padding-left: 11rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
 }
 
 .text-center {
@@ -711,8 +767,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-relaxed {
@@ -741,12 +816,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.opacity-10 {
-  opacity: 0.1;
+.text-slate-400 {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
-.opacity-20 {
-  opacity: 0.2;
+.text-cadet_blue {
+  color: rgba(171, 168, 190, 1);
+}
+
+.text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
+}
+
+.text-green-200 {
+  --tw-text-opacity: 1;
+  color: rgb(187 247 208 / var(--tw-text-opacity));
+}
+
+.opacity-10 {
+  opacity: 0.1;
 }
 
 .blur-3xl {
