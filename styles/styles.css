@@ -556,6 +556,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 24rem;
 }
 
+@-webkit-keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-breath {
+  -webkit-animation: breath 5s infinite;
+          animation: breath 5s infinite;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -584,12 +617,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-self: center;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .border-2 {
@@ -781,8 +814,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgba(171, 168, 190, 1);
 }
 
+.opacity-20 {
+  opacity: 0.2;
+}
+
 .opacity-10 {
   opacity: 0.1;
+}
+
+.blur-2xl {
+  --tw-blur: blur(40px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .blur-3xl {
