@@ -423,12 +423,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-@font-face {
-  font-family: "ELIXIA";
-
-  src: url('../public/fonts/ELIXIA.woff');
-}
-
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -702,7 +696,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .font-elixia {
-  font-family: "ELIXIA";
+  font-family: 'ELIXIA',sans-serif;
 }
 
 .font-montserrat {
@@ -799,3 +793,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:font-bold:hover {
   font-weight: 700;
 }
+
+@font-face {
+  font-family: "ELIXIA";
+
+  src: url("/public/fonts/ELIXIA.woff") format('.woff');
+}
+    
