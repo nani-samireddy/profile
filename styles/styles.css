@@ -797,6 +797,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: "ELIXIA";
 
-  src: url("../profile/fonts/ELIXIA.woff") format('woff');
+  src: url("../fonts/ELIXIA.woff") format('woff');
 }
     
