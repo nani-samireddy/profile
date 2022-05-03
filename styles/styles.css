@@ -426,7 +426,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: "ELIXIA";
 
-  src: url('../public/fonts/ELIXIA.ttf').format('woff');
+  src: url('../public/fonts/ELIXIA.woff');
 }
 
 *, ::before, ::after {
