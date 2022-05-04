@@ -492,6 +492,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -500,8 +504,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.h-1\/2 {
-  height: 50%;
+.h-2\/3 {
+  height: 66.666667%;
 }
 
 .h-auto {
@@ -524,6 +528,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 24rem;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -532,16 +548,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-5\/6 {
+  width: 83.333333%;
 }
 
 .w-auto {
   width: auto;
-}
-
-.w-5\/6 {
-  width: 83.333333%;
 }
 
 .w-3\/4 {
@@ -724,6 +736,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 5rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -736,9 +752,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Montserrat', sans-serif;
 }
 
-.text-superLarge {
-  font-size: 18rem;
-  line-height: 6rem;
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .text-4xl {
@@ -787,8 +803,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.1em;
 }
 
-.tracking-superWide {
-  letter-spacing: 1.2em;
+.tracking-sWide {
+  letter-spacing: 0.6em;
 }
 
 .text-white {
@@ -822,6 +838,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.1;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .blur-2xl {
   --tw-blur: blur(40px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -834,6 +854,46 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .lg\:visible {
+    visibility: visible;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:h-1\/2 {
+    height: 50%;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:pt-28 {
+    padding-top: 7rem;
+  }
+
+  .lg\:text-superLarge {
+    font-size: 18rem;
+    line-height: 6rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:tracking-superWide {
+    letter-spacing: 1.2em;
+  }
 }
 
 @font-face {
