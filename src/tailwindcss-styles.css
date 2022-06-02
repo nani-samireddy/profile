@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components {
+  .projects-card {
+    @apply h-96 w-96 bg-clip-border bg-cover flex items-center justify-center relative z-1;
+  }
+  .project-card-after {
+    @apply after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:-z-1  ;
+  }
+
+  .project-card-after-hover {
+    @apply after:hover:bg-[#550a1d7d];
+  }
+  .project-view-btn-visible {
+    @apply opacity-100 bg-[#057e0f];
+  }
+  .project-view-btn-hidden {
+    @apply opacity-0 bg-[#057e0f] px-6 py-4 rounded-lg font-semibold;
+  }
+}
+
+@font-face {
+  font-family: "ELIXIA";
+  src: url("../fonts/ELIXIA.woff") format("woff");
+}
