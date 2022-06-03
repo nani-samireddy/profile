@@ -13,7 +13,7 @@ module.exports = {
         dry_white: "rgba(222, 240, 204, 1)",
         crayola: "rgba(174, 222, 126, 0.76)",
         kiwi: "rgba(147, 226, 68, 0.44)",
-        lawn_green: "rgba(125, 244, 5, 0)",
+        lawn_green: "rgba(29, 55, 3, 0.88))",
         electric_green: "rgba(0, 255, 10, 1)",
         Mahogany: "rgba(186, 56, 1, 1)",
         cadet_blue: "rgba(171, 168, 190, 1)",
@@ -49,7 +49,7 @@ module.exports = {
       },
     },
     zIndex: {
-      '1': "1",
+      1: "1",
     },
   },
   plugins: [],

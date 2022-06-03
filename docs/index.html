@@ -22,7 +22,7 @@
         class="grid content-center w-full h-full text-center text-white font-elixia"
       >
         <div
-          class="absolute w-5/6 rounded-full animate-breath h-1/2 bg-electric_green opacity-20 blur-3xl place-self-center lg:h-1/2 lg:w-1/2"
+          class="absolute w-5/6 rounded-full animate-breath h-1/2 bg-electric_green opacity-10 blur-3xl place-self-center lg:h-1/2 lg:w-1/2"
         ></div>
         <span
           class="w-auto pt-10 tracking-widest text-transparent text-9xl bg-clip-text bg-gradient-to-r from-white  via-crayola to-lawn_green lg:text-superLarge lg:pt-28"
@@ -170,7 +170,7 @@
     </section>
 
     <!--Contact section-->
-    <section id="contact" class="w-screen h-screen text-white font-montserrat">
+    <section id="contact" class="w-screen h-auto text-white font-montserrat">
         <div class="w-full h-auto mt-24 pl-44">
         <div>
           <div class="box-border w-max border-b-[36px] border-b-mGreen mb-4">
@@ -183,11 +183,12 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col gap-8 items-start justify-center pl-60 pt-30">
-        <input class="w-80 text-3xl bg-transparent border-b-2 border-white p-2" type="text" id="nameInput" name="name" placeholder="NAME">
-        <input type="email" id="emailInput" name="email" placeholder="EMAIL">
-        <input type="number" id="phoneNumberInput" name="phoneNumber" placeholder="PHONE">
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+      <div class="flex flex-col gap-8 items-start justify-center pl-60 mt-28">
+        <input class="inputBaseStyle border-b-2" type="text" id="nameInput" name="name" placeholder="NAME">
+        <input class="inputBaseStyle border-b-2" type="email" id="emailInput" name="email" placeholder="EMAIL">
+        <input class="inputBaseStyle border-b-2" type="tel" id="phoneNumberInput" name="phoneNumber" placeholder="PHONE">
+        <textarea class="inputBaseStyle border-2" name="message" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+        <button class="text-5xl px-9 py-6 bg-Mahogany font-bold">SEND</button>
       </div>
     </section>
   </body>

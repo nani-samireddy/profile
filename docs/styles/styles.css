@@ -506,6 +506,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
   font-weight: 600;
   opacity: 0;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.project-view-btn-hidden:focus {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.inputBaseStyle {
+  width: 66.666667%;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  background-color: transparent;
+  padding: 0.5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .absolute {
@@ -526,6 +546,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .box-border {
@@ -610,30 +634,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: max-content;
 }
 
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-56 {
-  width: 14rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
 @-webkit-keyframes breath {
   0% {
     transform: scale(1);
@@ -691,14 +691,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
-.items-stretch {
-  align-items: stretch;
-}
-
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -743,10 +735,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 8px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-b-\[36px\] {
   border-bottom-width: 36px;
 }
@@ -758,11 +746,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-b-mGreen {
@@ -780,10 +763,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .bg-gradient-to-b {
@@ -808,16 +787,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), rgba(174, 222, 126, 0.76), var(--tw-gradient-to, rgb(174 222 126 / 0));
 }
 
-.via-white {
-  --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgb(255 255 255 / 0));
-}
-
 .to-black {
   --tw-gradient-to: #000;
-}
-
-.to-lawn_green {
-  --tw-gradient-to: rgba(125, 244, 5, 0);
 }
 
 .bg-cover {
@@ -837,10 +808,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2.5rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -849,6 +816,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-10 {
@@ -871,40 +848,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 5rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pl-24 {
-  padding-left: 6rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
 .pl-60 {
   padding-left: 15rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-0 {
-  padding-top: 0px;
 }
 
 .text-center {
@@ -954,12 +899,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .leading-relaxed {
@@ -1005,10 +959,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgba(116, 101, 124, 1);
 }
 
-.opacity-20 {
-  opacity: 0.2;
-}
-
 .opacity-10 {
   opacity: 0.1;
 }
@@ -1020,10 +970,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:font-bold:hover {
   font-weight: 700;
-}
-
-.hover\:opacity-100:hover {
-  opacity: 1;
 }
 
 .group:hover .group-hover\:project-view-btn-visible {
