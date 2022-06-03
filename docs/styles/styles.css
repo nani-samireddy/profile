@@ -506,16 +506,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
   font-weight: 600;
   opacity: 0;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.project-view-btn-hidden:focus {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 .inputBaseStyle {
@@ -526,6 +516,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
+  font-weight: 300;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.inputBaseStyle:focus {
+  font-weight: 500;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .absolute {
@@ -634,6 +633,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: max-content;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
 @-webkit-keyframes breath {
   0% {
     transform: scale(1);
@@ -685,6 +688,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -828,6 +835,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -846,6 +858,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-20 {
   padding-left: 5rem;
+}
+
+.pb-60 {
+  padding-bottom: 15rem;
 }
 
 .pl-60 {

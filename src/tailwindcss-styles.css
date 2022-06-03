@@ -18,11 +18,11 @@
     @apply opacity-100 bg-[#057e0f];
   }
   .project-view-btn-hidden {
-    @apply opacity-0 bg-[#057e0f] px-6 py-4 rounded-lg font-semibold outline-none focus:appearance-none focus:outline-none;
+    @apply opacity-0 bg-[#057e0f] px-6 py-4 rounded-lg font-semibold;
   }
 
   .inputBaseStyle {
-    @apply w-2/3 text-4xl bg-transparent  border-white p-2;
+    @apply w-2/3 text-4xl bg-transparent  border-white p-2 outline-none focus:outline-none font-light focus:font-medium;
   }
 }
 
